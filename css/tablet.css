@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* CSS Document */
+
+header {margin:10px 3% 0 0;}
+
+body {background-image:none;}
+
+
+
+/*.blq2 {margin:0 0 30px 12%;}
+*/
+h1 {color:#ffffff; background-color:#005ea1; width:99%; font-size:18px; font-family: 'PT Sans', Verdana, Geneva, serif; font-weight:normal; margin:0; padding:5px 0 5px 10px; border-radius:150px; -webkit-border-radius:150px; -moz-border-radius:150px; -ms-border-radius:150px; -o-border-radius:150px}
+
+
+.cabecera {width:100%; position:relative; float:left; text-align:center; margin:1% 0 0 0;}
+.cabecera img {width:80%;}
+
+
+
+/* NAVEGACIÓN  */
+
+.navmovil {display:none;}
+
+nav {margin:20px 0 0 0;}
+
+.franja {background:url(../img/honda2.png) 50% 100% no-repeat; top:145px; height:118px;}
+
+/*.blq2 {display:block; float:left; margin:0 0 0 5%; text-transform:uppercase;}
+*/.ant {letter-spacing:2.5px; font-size:7pt; padding:5px 0;}
+.tit1 {font-size:18pt; padding:0;}
+.tit2 {font-size:18pt; padding:0;}
+.subtit {font-size:17pt; padding:0;}
+
+
+.btacceso a {display:inline-block; margin:10px 30px 0 0; font-family: 'PT Sans', Verdana, Geneva, serif; font-weight:bold; font-size:12pt; color:#b81e2c; padding:10px 23px; text-decoration:none; float:right;
+border-radius: 24px 24px 24px 24px;
+-moz-border-radius: 24px 24px 24px 24px;
+-webkit-border-radius: 24px 24px 24px 24px;
+border:#b81e2c dotted 2px;}
+
+.btacceso a:hover {color:#ffffff; background-color:#005ea1; border:#005ea1 dotted 2px;}
+
+.btinscrip a {display:inline-block; margin:10px 0 0 30px; font-family: 'PT Sans', Verdana, Geneva, serif; font-weight:bold; font-size:12pt; color:#b81e2c; padding:10px 23px; text-decoration:none; float:left;
+border-radius: 24px 24px 24px 24px;
+-moz-border-radius: 24px 24px 24px 24px;
+-webkit-border-radius: 24px 24px 24px 24px;
+border:#b81e2c dotted 2px;
+}
+
+.btinscrip a:hover {color:#ffffff; background-color:#005ea1; border:#005ea1 dotted 2px;}
+
+
+/* PÁGINA DE INCIO  */
+
+.blq3 {display:inline-block; float:left; width:100%; font-size:10pt; margin-bottom: 10px; text-align:center;}
+
+.blqinicio div.txtinicio {width:75%;}
+
+.blq5 {display:none;}
+
+.blq5dcha {display:none;}
+
+
+.titseccion {margin:20px 0;}
+.blqgeneral div.txtgeneral {margin:0 40px;}
+.blqprofe div.titseccion {margin:0 40px;}
+
+
+
+
+.blqfaq div.txtfaq {margin:0 40px;}
+.blqfaq div.txtfaq ul li input[type=checkbox] {margin-left:255px;}
+
+.blqprofe div.txtprofe {margin:0 40px;}
+.blqprofe div.txtprofe div.txtproblq2 ul li input[type=checkbox] {margin-left:300px;}
+
+.blqtem div.txttem {margin:0 40px;}
+.blqtem div.txttem ul li input[type=checkbox] {margin-left:300px;}
+
+
+.caja1 {display:inline-block; float:left; width:85%; text-align:left; padding:0px 2% 0 2%; border-bottom:1px solid #FFF;}
+
+.caja2 {display:inline-block; float:left; width:85%; text-align:left; padding:0px 2% 0 2%; border-left:none; border-right:none; border-bottom:1px solid #FFF;}
+
+.caja3 {display:inline-block; float:left; width:85%; text-align:left; padding:0px 2% 0 2%;}

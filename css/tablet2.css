@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*.contenedor {padding:0 20px; margin:0 0 0 50px; width:70%; min-height:100%; }*/
+
+
+
+.global {float: left; width:100%;}
+
+.menu {float: left; width: 50px; top:0; margin: 1px;}
+
+.contenedor {padding:0 70px; width:auto; height: 100%;}
+
+@media (max-width: 769px) and (min-width: 768px) {
+.contenedor {padding:0 30px; width: 606px;}
+}
+
+
+.contenido {width:auto;} 
+
+
+/* MENU GENERAL */
+
+.menu div div.indilec:hover div div div {display: none;}
+.menu div div.indilec {width: 50px; height: 50px; top:220px; background:#ffffff url(../img/indileccion.png) no-repeat; background-size: 90%;}
+.menu div div.indilec div {top:50px; left: 51px;}
+.menu div div.indilec div div {left:-50px;}
+.menu div div.indilec div div a {height: 20px;}
+.menu div div.indilec:hover div {left: 51px; top:50px;}
+.menu div div.indilec:hover div div.submenu:hover div {display: block; width: 320px; border-top: #ffffff solid 1px; left:0; position: relative; background-color:#949ea9; opacity: 1; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indilec:hover {background-size: 90%;}
+
+
+
+.menu div div.indiemod:hover div div a {position: relative;}
+.menu div div.indiemod div div a {height: 20px;}
+.menu div div.indiemod {width: 50px; height: 50px; top:281px; background:#ffffff url(../img/indimodulo.png) no-repeat; background-size: 90%;}
+.menu div div.indiemod div {top:51px; left: 51px;}
+.menu div div.indiemod div div {left:-50px;}
+.menu div div.indiemod:hover div {left: 51px; top:50px;}
+.menu div div.indiemod:hover {background-size: 90%;}
+
+
+.menu div div.indiecaso:hover div div a {position: relative;}
+.menu div div.indiecaso div div a {height: 20px;}
+.menu div div.indiecaso {width: 50px; height: 50px; top:204px; background:#ffffff url(../img/caso.png) no-repeat; background-size: 90%;}
+.menu div div.indiecaso div div.casono a {background-image:none;}
+.menu div div.indiecaso div {top:51px; left: 51px;}
+.menu div div.indiecaso div div {left:-50px;}
+.menu div div.indiecaso:hover div {left: 51px; top:50px;}
+.menu div div.indiecaso:hover {background-size: 90%;}
+
+
+.menu div div.eval a {width: 50px; height: 50px; top:342px; background:#ffffff url(../img/eval.png) no-repeat; background-size: 90%;}
+.menu div div.eval a:hover {background-size: 90%;}
+
+.menu div div.autoeval a {width: 50px; height: 50px; top:403px; background:#ffffff url(../img/autoeval.png) no-repeat; background-size: 90%;}
+.menu div div.autoeval a:hover {background-size: 90%;}
+
+.menu div div.caso a {width: 50px; height: 50px; top:204px; background:#ffffff url(../img/caso.png) /*35% 50%*/ no-repeat; background-size: 90%;}
+.menu div div.indiecaso a {width: 50px; height: 50px; top:204px; background:#ffffff url(../img/caso.png) no-repeat; background-size: 90%;}
+
+.menu div div.conclu a {width: 50px; height: 50px; top:464px; background:#ffffff url(../img/conclu.png) no-repeat; background-size: 90%;}
+.menu div div.conclu a:hover {background-size: 90%;}
+
+.menu div div.biblio a {width: 50px; height: 50px; top:525px; background:#ffffff url(../img/biblio.png) no-repeat; background-size: 90%;}
+.menu div div.biblio a:hover {background-size: 90%;}
+
+/*.menu div div.bibliovirt a {width: 50px; height: 50px; top:357px; background:#ffffff url(../img/bibliovirt.png) no-repeat; background-size: 90%;}
+*/
+.menu div div.pdf a {width: 50px; height: 50px; top:586px; background:#ffffff url(../img/pdf.png) no-repeat; background-size: 90%;}
+.menu div div.pdf a:hover {background-size: 90%;}
+
+.menu div div.ayuda a {width: 50px; height: 50px; top:647px; background:#ffffff url(../img/ayuda.png) no-repeat; background-size: 90%;}
+.menu div div.ayuda a:hover {background-size: 90%;}
+
+.menu div div.indilec span {left:50px; line-height:50px;}
+
+.menu div div.indiemod span {left:50px; line-height:50px;}
+.menu div div.indiecaso span {left:50px; line-height:50px;}
+
+.menu div div span {left:50px; line-height:50px;}
+
+/* fin MENU GENERAL */
+
+
+/* BOTONES DERECHA  */
+
+.botonesdcha { float: right; width: 50px; margin: 1; }
+
+
+/* NAVEGACIÓN Y NUMERACIÓN */
+
+.navegacion {top:0; width: 50px;}
+.navegacion div.numeracion {padding: 5px 5px 5px 5px; width: 40px; height: 40px; font-size: 32px;}
+.navegacion div.botdcha a {width: 50px; height: 50px; background:#30383d url(../img/dcha.png) 50% 0% no-repeat; background-size: 95%;}
+.navegacion div.botizda a {width: 50px; height: 50px; background:#30383d url(../img/izda.png) 50% 0% no-repeat; background-size: 95%;}
+
+.navegacion div.botdchablc {width: 50px; height: 50px; background:#949ea9 url(../img/dcha.png) 50% 0% no-repeat; background-size: 95%;}
+.navegacion div.botizdablc {width: 50px; height: 50px; background:#949ea9 url(../img/izda.png) 50% 0% no-repeat; background-size: 95%;}
+
+.navegacion div:hover a {background-color:#949ea9; webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+
+
+
+.elementos {width: 50px; top:230px;}
+.elementos div a {width: 50px; height: 17px; padding-top: 33px;}
+.figura a {background:#971828 url(../img/figura.png) 50% 0% no-repeat; background-size: 95%;}
+.tabla a {background:#b81e2c url(../img/tabla.png) 50% 0% no-repeat; background-size: 95%;}
+.elementos div span {line-height:50px;}
+
+/* fin BOTONES DERECHA  */
+
+
+/* CABECERA */
+
+.cabecera2 {width:auto; padding-right:50px;}
+
+
+
+
+
+/*  PARA MOVILES  */
+
+@media (max-width: 736px) and (min-width: 300px) {
+	
+body {background: #ffffff;}
+
+	.faldonsup {display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100px; }
+	
+.global {float: left; width:100%; margin-top:20px;}	
+
+.contenedor {padding:0 20px; width: auto;}
+
+.menu div div.pgant { background-size:50%; top:60px; }
+
+.menu div div.pgant:hover {background-size:50%;}
+
+.pgpost {background-size:50%; top:60px; }
+
+.pgpost:hover {background-size:50%;}
+
+
+	
+.menu {display: inline-block; float: left; width: auto; position: fixed; left:0; top:0; margin: 0;}
+	
+.menu div {display: inline-block; float: left; width:auto /*50px*/; top:0; position: relative;}
+	
+.menu div div.indilec {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.indilec:hover {border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiemod {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.indiemod:hover {border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiecaso {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.eval a {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.eval a:hover {border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.autoeval a {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.autoeval a:hover {border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.caso a {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.conclu a {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.conclu a:hover {border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.conclu2 a {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.biblio a {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.biblio a:hover {border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.bibliovirt a {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.pdf  a{display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.pdf a:hover {border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.ayuda a {display: block; width: 50px; height: 50px; position: relative; top:0;}
+.menu div div.ayuda a:hover {border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+	
+.menu div div.indilec:hover div {left: 0; top:50px;}
+.menu div div.indiemod:hover div {left: 0; top:50px;}
+.menu div div.indiecaso:hover div {left: 0; top:100px;}
+
+.menu div div span {display: none;}
+	.elementos {display: none;}
+	
+.navegacion {top:0; width: 150px; height: 50px; right: 0;}
+.navegacion div {float: left; margin-top: 0;}
+.navegacion div.botizda a {float: left; margin-top: 0;}
+.navegacion div.botdcha a {float: left; margin-top: 0;}
+
+	
+	
+}
+
+

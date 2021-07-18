@@ -1,0 +1,8 @@
+[canvas=container],
+[off-canvas] {
+    padding:0;
+}
+
+[class*=js-] {
+    cursor: pointer;
+}

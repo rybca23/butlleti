@@ -1,0 +1,468 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {font-family: 'PT Sans', Verdana, Geneva, sans-serif; background: #ffffff; margin:0 auto; font-size:12pt; color:#000000; font-weight:300; background-image:url(../img/fondo_hierro.png); background-size:content; background-repeat:no-repeat; background-position:right top;}
+
+
+
+strong {font-weight:600;}
+
+h1 {color:#ffffff; background-color:#005ea1; width:auto; font-size:20px; font-family: 'PT Sans', Verdana, Geneva, serif; font-weight:normal; margin:50px 0 0 0; padding:5px 15px; border-radius:150px; -webkit-border-radius:150px; -moz-border-radius:150px; -ms-border-radius:150px; -o-border-radius:150px;}
+h2 {color:#30383d; font-size:24px; font-family: 'PT Sans', Verdana, Geneva, serif; font-weight:600; line-height: 1.2em; margin:0; padding:40px 0 20px 20px;}
+h3 {color:#b81e2c; font-size:18px; font-family: 'PT Sans', Verdana, Geneva, serif; font-weight:400; line-height: 1.2em; margin:0; padding:20px 0 20px 20px;}
+h4 {color:#949ea9; font-size:16px; font-family: 'PT Sans', Verdana, Geneva, serif; font-weight:600; line-height: 1.2em; margin:0; padding:20px 0 20px 20px;}
+
+a  {text-decoration: none; color:#b81e2c; font-weight: 600;}
+
+.casoclinico {color:#949ea9; font-size:44px; font-family: 'PT Sans', Verdana, Geneva, serif; font-weight:200; line-height: 1.2em; margin:0; padding:30px 0 0 0;}
+
+ol{counter-reset: item;}
+ol li{
+list-style: none;
+*list-style:decimal; /* IE7 e IE6*/
+padding:4px 0;
+margin-left: 0;}
+
+ol li:before {
+display: inline-block;
+content: counter(item) ". ";
+counter-increment: item;
+color: #971828;
+font-weight: 600;
+padding-right: 15px;
+margin-left: -40px;
+text-align: right;
+width: 1.5em;
+
+}
+ol li ol li:before{
+color: #949ea9;
+font-weight: 600;
+padding: 0 2px;
+}
+
+ul li {list-style-image:url(../img/puntolist1.png); padding:10px 10px;}
+ul li ul li {list-style-image:url(../img/puntolist2.png); padding:10px 10px;}
+
+.blanco {color:#ffffff;}
+.grisclarito2 {color:#dcdee8;}
+.grisclarito {color:#a2b1b6;}
+.grisclaro {color:#949ea9;}
+.grisoscuro {color:#30383d;}
+.grismediano {color:#5a5a5c;}
+.rojo {color:#b81e2c;}
+.rojoscuro {color:#971828;}
+
+.rojobold {color:#b81e2c; font-weight:600;}
+
+.edicion {font-weight: 700; font-size: 18px; color:#706f6f;}
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: #949ea9;
+	float: left;
+	display: block;
+	margin: 10px 0;
+	width: 100%;
+}
+
+.global {display:block; margin:0 auto; width: 1024px;}
+
+sup {font-size:0.6em; line-height:0.5em; font-size-adjust:0.4;}
+sub {font-size:0.6em; line-height:0.5em; font-size-adjust:0.4;}
+
+.pietxt {clear:both; font-size:14px; font-style:italic; color:#971828; text-align:justify; margin-top:40px;}
+
+
+.contenedor {display:block; float: left; padding:0 40px 100px 40px; width:820px; min-height:750px; /*-webkit-box-shadow:0px 7px 14px 0px rgba(0,0,0,0.3); -moz-box-shadow:0px 7px 14px 0px rgba(0,0,0,0.3); box-shadow:0px 7px 14px 0px rgba(0,0,0,0.3);*/ }
+
+
+
+/* CABECERA */
+
+header {display: block; float: left; width: 100%;}
+.cabecera1 {display: inline-block;}
+
+.cabecera2 {display: inline-block; margin-left: 40px; margin-top: 10px; width: 100%;}
+.titulocurso {display: block; font-size: 13pt; color:#005ea1; font-weight: bold; padding-top:30px; margin-top: 10px; }
+.gris {color:#949ea9;}
+.titulomod {display: block; font-size: 12pt; color:#b81e2c; font-weight: 400; margin-top: 10px; }
+.titulolec {display: block; font-size: 12pt; font-weight: 400; color:#5a5a5c;}
+.tituloautor {display: block; font-style:italic; font-size: 10pt; color:#949ea9; margin-top: 2px; }
+
+/*@media (max-width: 1000px) and (min-width: 689px) {
+	.cabecera2 {width: 45%;}
+}
+@media (max-width: 690px) and (min-width: 301px) {
+	.cabecera2 {width: 90%;}
+}*/
+
+/* fin CABECERA */
+
+/* MENU GENERAL */
+.menu {display: block; float: left; width: 60px; top:20px; margin: 1px;}
+
+
+/* Flechas */
+
+
+.menu div div.pgant {display: block; width: 60px; height: 200px; color:#ffffff; 
+position: fixed; top:20px; background:url(../img/pgant.png) no-repeat; 
+/*-webkit-box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3);*/ 
+cursor: pointer;}
+
+.menu div div.pgant:hover {background:url(../img/pgant_roll.png) no-repeat;}
+
+
+
+	/* Indice Lección */
+
+.menu div div.indilec:hover div div div {display: none;}
+
+.menu div div.indilec {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:220px; background:#ffffff url(../img/indileccion.png) no-repeat; 
+/*-webkit-box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3);*/ 
+cursor: pointer;}
+
+.menu div div.indilec:hover {background:#005ea1 url(../img/indileccion_roll.png) no-repeat; border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indilec div {width: 0; top:60px; left: 61px; height: auto; position: relative; overflow:hidden;}
+
+.menu div div.indilec div div {overflow:hidden; top:0; left:-60px;}
+
+.menu div div.indilec:hover div div {overflow:visible; top:0; left:0;}
+.menu div div.indilec div div a {width: 0; height: 20px; left:0; padding: 18px 5px 12px 15px; font-size: 12px; font-weight: 500; white-space:nowrap; opacity: 0; overflow:hidden; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indilec div div.doslineas a {height: 30px; padding: 10px 5px 10px 15px;}
+.menu div div.indilec div div.sindoslineas a {height: 23px; padding: 17px 5px 10px 15px;}
+
+.menu div div.indilec:hover div {width: 320px; left: 61px; position: relative; top:60px; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+/* PARA WEB  */
+.menu div div.indilec:hover div div a {display: block; width: 320px; border-top: #ffffff solid 1px; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: relative; background-color:#949ea9; opacity: 1; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indilec:hover div div.submenu:hover div {display: block; width: 330px; top:0; left: 340px; position: absolute; background-color:#ffffff; opacity: 1; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indilec:hover div div.submenu:hover div div {display: block; width: 320px; left: 0; position: relative; background-color:#949ea9; opacity: 1; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+/*  PARA MOVIL y TABLET */
+/*.menu div div.indilec:hover div div a {display: block; width: 320px; border-top: #ffffff solid 1px; position: relative; background-color:#949ea9; opacity: 1; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indilec:hover div div.submenu:hover div {display: block; width: 320px; border-top: #ffffff solid 1px; position: relative; background-color:#949ea9; opacity: 1; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}*/
+
+
+.menu div div.indilec:hover div div.submenu > .menu div div.indilec:hover div div.submenu:hover div a {color:#949ea9;}
+.menu div div.indilec:hover div div.submenu:hover div a {color:#949ea9;}
+.menu div div.indilec:hover div div.submenu:hover div a:hover {color:#dcdee8; background:#949ea9; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indilec:hover div div:hover a {background:#b81e2c;
+-webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indilec:hover div div a:hover {color:#949ea9;
+-webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indilec:hover div div a {color:#dcdee8; font-weight: 6000;}
+
+	/* FIN Indice Lección */
+
+
+
+
+	/* Indice Módulo */
+
+.menu div div.indiemod {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; position: fixed; top:281px; 
+background:#ffffff url(../img/indimodulo.png) no-repeat; cursor: pointer;}
+
+.menu div div.indiemod:hover {background:#005ea1 url(../img/indimodulo_roll.png) no-repeat; border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiemod div {width: 0; top:60px; left: 61px; height: auto; position: relative; overflow:hidden;}
+
+.menu div div.indiemod div div {overflow:hidden; top:0; left:-60px;}
+
+.menu div div.indiemod:hover div div {overflow:visible; top:0; left:0;}
+.menu div div.indiemod div div a {width: 0; height: 20px; left:0; padding: 18px 5px 12px 15px; font-size: 12px; font-weight: 500; white-space:nowrap; opacity: 0; overflow:hidden; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiemod div div.doslineas a {height: 30px; padding: 10px 5px 10px 15px;}
+
+.menu div div.indiemod:hover div {width: 320px; left: 61px; position: relative; top:60px; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+
+.menu div div.indiemod:hover div div a {display: block; width: 320px; border-top: #ffffff solid 1px; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px;
+position: relative; background-color:#949ea9; opacity: 1; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+
+.menu div div.indiemod:hover div div:hover a {background:#30383d;
+-webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indiemod:hover div div a:hover {color:#949ea9;
+-webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indiemod:hover div div a {color:#dcdee8;}
+
+	/* FIN Indice Módulo */
+
+
+
+
+
+
+
+	/* Indice CASO CLÍNICO */
+.menu div div.indiecaso {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:464px; 
+background:#ffffff url(../img/caso.png) no-repeat; cursor: pointer;}
+
+.menu div div.indiecaso:hover {background-color:#005ea1; border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiecaso div {width: 0; top:60px; left: 61px; height: auto; position: relative; overflow:hidden;}
+
+.menu div div.indiecaso div div {overflow:hidden; top:0; left:-60px; opacity: 0; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indiecaso div div a {overflow:hidden; top:0; left:-60px; opacity: 0; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiecaso:hover div div {overflow:visible; top:0; left:0; opacity: 1;}
+.menu div div.indiecaso div div a {width: 0; height: 20px; top:0; left:0; padding: 18px 5px 12px 15px; font-size: 12px; font-weight: 500; white-space:nowrap; opacity: 0; overflow:hidden; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiecaso div div.doslineas a {height: 30px; padding: 10px 5px 10px 15px;}
+
+.menu div div.indiecaso:hover div {width: 117px; left: 61px; position: relative; top:60px; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+
+.menu div div.indiecaso:hover div div a {display: block; width: 117px; border-top: #ffffff solid 1px; position: relative; background-color:#949ea9; opacity: 1; overflow:visible; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+
+.menu div div.indiecaso:hover div div:hover a {background:#30383d;
+-webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indiecaso:hover div div a:hover {color:#949ea9;
+-webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.menu div div.indiecaso:hover div div a {color:#dcdee8;}
+
+	/* FIN Indice CASO CLÍNICO */
+
+
+
+
+
+.menu div div.eval a {display: block; width: 60px; height: 60px; color:#ffffff; position: fixed; top:342px; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+background:#ffffff url(../img/eval.png) no-repeat; cursor: pointer;}
+
+.menu div div.eval a:hover {background:#005ea1 url(../img/eval_roll.png) no-repeat;  
+border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.autoeval a {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:403px; background:#ffffff url(../img/autoeval.png) no-repeat; cursor: pointer;}
+
+.menu div div.autoeval a:hover {background:#005ea1 url(../img/autoeval_roll.png) no-repeat; 
+border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+/*.menu div div.caso a {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:264px; background:#005ea1 url(../img/caso.png) no-repeat;}
+
+.menu div div.casono a {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:325px; background-image: none; background:#005ea1;}
+*/
+.menu div div.conclu a {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:464px; background:#ffffff url(../img/conclu.png) no-repeat;}
+
+.menu div div.conclu a:hover {background:#005ea1 url(../img/conclu_roll.png) no-repeat; border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.biblio a {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:525px; background:#ffffff url(../img/biblio.png) no-repeat;}
+
+.menu div div.biblio a:hover {background:#005ea1 url(../img/biblio_roll.png) no-repeat; border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+/*.menu div div.bibliovirt a {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:386px; background:#ffffff url(../img/bibliovirt.png) no-repeat;}
+
+.menu div div.bibliovirt a:hover {background-color:#005ea1; border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+*/
+.menu div div.pdf a {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:586px; background:#ffffff url(../img/pdf.png) no-repeat;}
+
+.menu div div.pdf a:hover {background:#005ea1 url(../img/pdf_roll.png) no-repeat; 
+border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.ayuda a {display: block; width: 60px; height: 60px; color:#ffffff; 
+border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius:50px; 
+position: fixed; top:647px; background:#ffffff url(../img/ayuda.png) no-repeat;}
+
+.menu div div.ayuda a:hover {background:#005ea1 url(../img/ayuda_roll.png) no-repeat; border-radius:50px 0 0 50px; -webkit-border-radius:50px 0 0 50px; -moz-border-radius:50px 0 0 50px; -ms-border-radius:50px 0 0 50px; -o-border-radius:50px 0 0 50px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div:hover span a {background-color:#949ea9; webkit-transition: all 0.25s ease-in-out;
+-moz-transition: all 0.25s ease-in-out;
+-o-transition: all 0.25s ease-in-out;
+transition: all 0.25s ease-in-out;}
+
+
+.menu div div.indilec span {width:0; left:60px; padding:0; position:absolute; overflow:hidden; font-size: 14px; color:#dcdee8; font-weight: 500; 	white-space:nowrap;	line-height:60px; background-color:#005ea1; 
+border-radius:0 50px 50px 0;  
+-webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiemod span {width:0; left:60px; padding:0; position:absolute; overflow:hidden; 
+border-radius:0 50px 50px 0; -webkit-border-radius:0 50px 50px 0; -moz-border-radius:0 50px 50px 0; -ms-border-radius:0 50px 50px 0; -o-border-radius:0 50px 50px 0;
+font-size: 14px; color:#dcdee8; font-weight: 500; 	white-space:nowrap;	line-height:60px; background-color:#005ea1; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div.indiecaso span {width:0; left:60px; padding:0; position:absolute; overflow:hidden; font-size: 14px; color:#dcdee8; font-weight: 500; 	white-space:nowrap;	line-height:60px; background-color:#005ea1; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div span {width:0; left:60px; padding:0; position:absolute; overflow:hidden; font-size: 14px; color:#dcdee8; font-weight: 500; 	
+border-radius:0 50px 50px 0; -webkit-border-radius:0 50px 50px 0; -moz-border-radius:0 50px 50px 0; -ms-border-radius:0 50px 50px 0; -o-border-radius:0 50px 50px 0;
+white-space:nowrap;	line-height:60px; background-color:#005ea1; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.menu div div:hover span { width:auto; padding:0 20px; overflow:visible;}
+.menu div div:hover span a {color:#dcdee8;}
+
+.menu div div.indilec:hover span { width:auto; padding:0 20px; overflow:visible;}
+.menu div div.indiemod:hover span { width:auto; padding:0 20px; overflow:visible;}
+.menu div div.indiecaso:hover span { width:auto; padding:0 20px; overflow:visible;}
+.menu div div.indiemod:hover span { width:301px;}
+.menu div div.indiecaso:hover span { width:98px;}
+.menu div div.indilec:hover span { width:301px;}
+
+/* fin MENU GENERAL */
+
+
+
+
+/* BOTONES DERECHA */
+
+.botonesdcha {display: block; float: left; width: 60px; margin: 0;}
+
+/* NAVEGACIÓN Y NUMERACIÓN */
+
+.pgpost {display: block; width: 60px; height: 200px; color:#ffffff; 
+position: fixed; top:20px; background:url(../img/pgpost.png) no-repeat; 
+/*-webkit-box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:-4px 4px 12px 0px rgba(0,0,0,0.3);*/ 
+cursor: pointer;}
+
+.pgpost:hover {background:url(../img/pgpost_roll.png) no-repeat;}
+
+
+.navegacion {display: block; position: fixed; width: 60px; top:20px;}
+
+.navegacion div.numeracion {padding: 10px 5px 5px 5px; width: 50px; height: 45px; font-size: 32px; font-weight: 200; text-align: center; position: relative; background-color: #b81e2c; color: #ffffff; -webkit-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3);}
+
+.navegacion div.numeracion:hover {background-color:#b81e2c;}
+
+
+.navegacion div.botdcha a {display: block; width: 60px; height: 60px; margin-top: 1px; color:#ffffff; position: relative; background:#30383d url(../img/dcha.png) no-repeat; -webkit-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3);}
+
+.navegacion div.botizda a {display: block; width: 60px; height: 60px; margin-top: 1px; color:#ffffff; position: relative; background:#30383d url(../img/izda.png) no-repeat; -webkit-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3);}
+
+.navegacion div:hover a {background-color:#949ea9; webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+
+.navegacion div.botdchablc {display: block; width: 60px; height: 60px; margin-top: 1px; color:#ffffff; position: relative; background:#949ea9 url(../img/dcha.png) no-repeat; -webkit-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3);}
+
+.navegacion div.botizdablc {display: block; width: 60px; height: 60px; margin-top: 1px; color:#ffffff; position: relative; background:#949ea9 url(../img/izda.png) no-repeat; -webkit-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3);}
+
+
+
+/* fin NAVEGACIÓN Y NUMERACIÓN */
+
+
+
+
+/* FIGURAS Y TABLAS */
+.elementos {display: block; position: fixed; width: 60px; top:250px;}
+
+.elementos div a {display: block; width: 60px; height: 18px; margin-top: 1px; position: relative; font-size: 12px; font-weight: 600; text-align: center; padding-top: 42px; color:#ffffff;
+-webkit-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); -moz-box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3); box-shadow:4px 4px 12px 0px rgba(0,0,0,0.3);}
+ 
+.figura a {background:#971828 url(../img/figura.png) no-repeat;}
+.tabla a {background:#b81e2c url(../img/tabla.png) no-repeat;}
+
+.elementos div span {top:0;}
+
+.elementos div span {width:0; left:0; padding:0; position:absolute; overflow:hidden; font-size: 14px; color:#dcdee8; font-weight: 500; 	white-space:nowrap;	line-height:60px; background-color:#949ea9; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.elementos div.elemnt1:hover span {top:0; width:55px; text-align: center; padding:0 20px; overflow:visible; left: -95px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.elementos div.elemnt2:hover span {top:0; width:55px; text-align: center; padding:0 20px; overflow:visible; left: -95px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.elementos div.elemnt3:hover span {top:0; width:55px; text-align: center; padding:0 20px; overflow:visible; left: -95px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.elementos div.elemnt4:hover span {top:0; width:55px; text-align: center; padding:0 20px; overflow:visible; left: -95px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.elementos div.elemnt5:hover span {top:0; width:55px; text-align: center; padding:0 20px; overflow:visible; left: -95px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+.elementos div.elemnt6:hover span {top:0; width:55px; text-align: center; padding:0 20px; overflow:visible; left: -95px; -webkit-transition: 0.25s; -moz-transition: 0.25s; transition: 0.25s;}
+
+.elementos div:hover span {color:#dcdee8;}
+
+
+.elementos div:hover a {background-color:#949ea9; webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+
+
+a.txtfigura {font-weight:600; color:#971828; font-size: 12pt;}
+a.txttabla {font-weight:600; color:#b81e2c; font-size: 12pt;}
+
+
+
+/* fin FIGURAS Y TABLAS */
+
+/* fin BOTONES DERECHA */
+
+
+
+
+
+
+
+/* BIBLIOGRAFÍA en texto */
+
+
+.biblio {color:#C00; font-weight:700; font-size:18px; padding:0; margin:0;}
+button.biblio {background-color:transparent; border:none;}
+.bibliotxt {padding:10px 20px 30px 20px; color:#fff; margin:0 auto; font-size:14px;}
+
+/* fin BIBLIOGRAFÍA en texto */
+
+/*PARA BIBLIOGRAFIA NUEVO*/
+
+.parenttbiblio 					{ position: relative; z-index: 50; font-weight:bold; color: #b81e2c; text-decoration: none; }
+
+.ventbiblio 					{ position: relative; z-index: 0; font-weight:bold; color: #b81e2c; text-decoration: none; }
+
+.ventbiblio:hover 				{ background-color: transparent; color: #005ea1; z-index: 999999; }
+
+.ventbiblio span 				{ border: 2px solid #b81e2c; border-radius:10px; -moz-border-radius:10px; -ms-border-radius:10px; -o-border-radius:10px; padding: 5px; position: absolute; background-color: #FFFFFF; color: #000000; text-align: left; visibility: hidden; font-size: 0.8em; line-height: 13px; font-weight: normal; width: 150px; }
+
+
+.ventbiblio:hover span 			{ visibility: visible; top: 10px; left:-75px; position: absolute; z-index: 1010; }
+
+
+	
+.Estilo1 						{ color: #99CCFF; }
+.Estilo3 						{ color: #000099; }
+
+.Estilo4 						{ color: #0066CC; font-weight: bold; }
+
+
+
+/* CONTENIDO */
+.contenido {display:block; float:left; width:824px; margin:10px 0; padding:0; line-height:1.7em;}
+
+/* fin CONTENIDO */
+
+
+/* BIBLIOTECA VIRTUAL */
+
+.cajavirtual {float: left; margin-right: 20px; width: 150px; height: 270px;}
+.cajavirtual p {line-height: 1.2em; font-weight: 500;}
+.cajavirtual img { border: 1px solid #999;}
+
+.cajavirtual2 {float: left; margin-right: 20px; width: 175px; height: 270px;}
+.cajavirtual2 p {line-height: 1.2em; font-weight: 500;}
+.cajavirtual2 img { border: 1px solid #999;}
+
+
+/* fin  BIBLIOTECA VIRTUAL */
