@@ -11,7 +11,7 @@
 // *********************************************************************
 
 // URLs FIJAS DEL PORTAL (MODIFICAR SOLO SI CAMBIA LA IP O EL PUERTO)
-    URL_GenerarMatricula = "https://rybcxxxxxxxxxxxxxxxxxxxxxxxxxxxx.asp"
+    URL_GenerarMatricula = "https://rybca.online/asp/altaonline/validaciongemma.asp"
 // *********************************************************************  
 
 function Matricular(){
