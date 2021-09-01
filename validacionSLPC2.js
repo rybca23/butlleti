@@ -95,6 +95,14 @@ function isDate(sDate) {
  return true;
 }
 
+function getUrlParam(parameter, defaultvalue){
+    var urlparameter = defaultvalue;
+    if(window.location.href.indexOf(parameter) > -1){
+        urlparameter = getUrlVars()[parameter];
+        }
+    return urlparameter;
+}
+
 function verifyUser(txt){
 var status; 
 var txtRegEx = /^[a-zA-Z0-9_-]+$/i;

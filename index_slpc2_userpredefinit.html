@@ -1,0 +1,143 @@
+<!doctype html><html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Puesta al día: Manejo del déficit de hierro en distintas situaciones clínicas. Papel del hierro intravenoso" >
+<meta name="viewport" content="width=device-width">
+<title>Puesta al día: Manejo del déficit de hierro en distintas situaciones clínicas. Papel del hierro intravenoso</title>
+
+<script src="ValidacionSLPC2.js"></script>
+
+<h1>Boletín de inscripción</h1>
+
+<form id="AltaOnline" method="post">     
+        <table width="550" border="0" cellpadding="5" >
+  <tr>
+    <td width="250" class="txtform">Nombre <span class="rojo">*</span></td>
+    <td width="257"><input type="text" name="Nombre" size="30px" value=""></td>
+  </tr>
+<tr>
+    <td class="txtform">Apellidos <span class="rojo">*</span></td>
+    <td><input id ="Apellidos" type="text"  name="Apellido1" size="36" value=""></td>
+  </tr>
+    <td><input  type="hidden"  name="Apellido2" size="36" value=" "></td>
+  
+  <tr>
+    <td class="txtform">Teléfono de contacto <span class="rojo">*</span></td>
+    <td><input type="text" name="Telefono" size="18" value=""></td>
+  </tr>
+  <tr>
+    <td class="txtform">DNI <span class="rojo">*</span></td>
+    <td><input type="text" name="NIF" size="18" value=""></td>
+  </tr>
+  <tr>
+    <td class="txtform">Población <span class="rojo">*</span></td>
+    <td><input type="text" name="Ciudad" size="18" value=""></td>
+  </tr>
+  <tr>
+    <td class="txtform">Código postal <span class="rojo">*</span></td>
+    <td><input type="text" name="CodigoPostal" size="5" value=""></td>
+  </tr>
+  <tr>
+    <td class="txtform">Provincia <span class="rojo">*</span></td>
+    <td><input type="text" name="Provincia" size="14" value=""></td>
+  </tr>
+  <tr>
+    <td class="txtform">Correo electrónico <span class="rojo">*</span></td>
+    <td><input type="text" size="35" name="Email" id="Email" value=""></td>
+  </tr>
+  <tr>
+    <td class="txtform">Confirmación correo electrónico <span class="rojo">*</span></td>
+    <td><input type="text" size="35" name="Email1" id="Email1" value=""></td>
+  </tr>
+<tr>
+    <td class="txtform">Centro de trabajo <span class="rojo">*</span></td>
+    <td><input type="text" name="CentroTrabajo" size="35" value="">
+    	<input type="hidden" name="Campo1"  /></td>
+  </tr>
+  <tr>
+    <td class="txtform">Especialidad <span class="rojo">*</span></td>
+    <td><input type="text" name="Especialidad" size="35" value="">
+		<input type="hidden" name="Campo3"  /></td>
+  </tr>
+  <tr>
+   <td class="txtform">Marque si es residente <span class="rojo">*</span></td>
+    <td><input name="rbOcupacion2" type="checkbox" value="Residente" onClick="javascript:CambiaOcupacion2(AltaOnline);"/></td>
+<input type="hidden" name="Campo2"  /></td>
+  </tr>
+  
+ 
+  <!--FORMULARIO-->
+<div id="obligada"><p><span class="rojo">*</span> De obligada cumplimentación</p></div>
+</table>
+<table width="430" border="0" cellpadding="5">
+<div id="password" align="center">
+	<tr>
+    <td class="txtform">Usuario <span class="rojo">*</span></td>
+    <td><input type="text" size="14px" name="Usuario" id="Usuario"  value=""></td>
+  </tr>
+  <tr>
+    <td class="txtform">Contraseña <span class="rojo">*</span></td>
+    <td><input type="password" size="14px" name="Password" id="Password" value=""></td>
+  </tr>
+  <tr>
+    <td class="txtform">Confirmar contraseña <span class="rojo">*</span></td>
+    <td><input type="password" size="14px" name="Password1" id="Password1" value=""></td>
+  </tr>
+  <tr>
+    <td class="txtpq" colspan="2">Introduzca un código de usuario y contraseña<br />
+(son necesarios un mínimo de 6 dígitos y un máximo de 12;<br>se ruega no utilizar la "ñ", ni caracteres especiales)</td>
+  </tr>
+  <tr>
+    <td class="obligada"><span class="rojo">*</span> De obligada cumplimentación</td>
+    <td>&nbsp;</td>
+  </tr>
+  <!--<tr>
+    <td align="right"><input type="button" name="Enviar" value="Registrar"  onclick="javascript:Validar(AltaOnline);"/></td>
+    <td><input type="reset" value="Limpiar"></td>
+  </tr>-->
+  <tr>
+    <td class="txtform">&nbsp;</td>
+    <td>&nbsp;</td>
+</div>
+ </table>
+<input type="hidden" name="Recurso" value="" />
+			<input type="hidden" name="Curso" value="" />
+			<input type="hidden" name="Grupo" value="" />
+</td>
+
+<p align="justify">Marque la casilla correspondiente:</p>	
+	
+<p align="justify"><input type="checkbox" name="LOPD" > Otorgo mi consentimiento para que Ambos Marketing S.L. trate mis datos con la finalidad de la gestión de preinscripción al curso de <strong>“Puesta al día: Manejo del déficit de hierro en distintas situaciones clínicas. Papel del hierro intravenoso”</strong>.</p>
+<!--<p align="justify"><input type="checkbox" name="LOPD1" > Otorgo mi consentimiento para que mis datos puedan ser cedidos por Ambos Marketing, y en exclusiva para la gestión de preinscripción, a laboratorios farmacéuticos y empresas de diagnóstico del sector salud de ámbito nacional, que puedan patrocinar el citado curso, cuya preinscripción se realiza.</p>
+-->	
+<p align="justify">Una vez confirmada la preincripción sus datos pasarán a formar parte de un fichero para la gestión de la formación contratada. En caso de no realizarse la incripción, sus datos no se conservarán y serán destruidos.</p>
+<p align="justify">Si usted no nos facilita la información solicitada, no podremos prestar el servicio de preinscripción al curso.</p>
+<p align="justify">Siempre podrá ejercer sus derechos de Acceso, Rectificación, Cancelación y Oposición más los derechos de Limitación Olvido y Portabilidad en la dirección: C/ Rosselló, 335; bajos local 1 / 08037 Barcelona, o mediante un correo a la dirección <a href="info@ambosmarketing.com">info@ambosmarketing.com</a> o en el teléfono 93 208 05 52</p>
+	
+<!--<p align="justify">De conformidad con lo establecido en la normativa del Reglamento Europeo 679/2016, le informamos de que los datos facilitados serán incorporados en el Fichero de Ambos Marketing Services, S.L., con domicilio en c/ Rosselló, 335; bajos. 08037 Barcelona, y con CIF B66410382. La finalidad del fichero es la de gestionar la iniciativa de formación continuada "Puesta al día: Manejo del déficit de hierro en distintas situaciones clínicas. Papel del hierro intravenoso". Tiene derecho a acceder a la información recopilada, rectificarla y/o cancelarla. Siempre podrá ejercer sus derechos de acceso, rectificación, cancelación y oposición más los derechos de limitación, olvido y portabilidad en la dirección: c/ Rosselló, 335; bajos - local 1. 08037 Barcelona, o mediante un correo a la dirección <a href="info@ambosmarketing.com">info@ambosmarketing.com</a>.</p>
+--><!--<p align="justify">Los datos relativos a los profesionales que notifiquen un acontecimiento adverso o situación especial serán comunicados a Laboratorios Alexion Pharma Spain SL, como empresa patrocinadora del curso, cuyos datos de contacto son los siguientes:
+</p>
+	<ul align="justify">
+		<li>Identidad: Laboratorios Vifor Pharma Spain SL. CIF: B-64494784.</li>
+		<li>Dirección postal: Diagonal 601. Piso 1. 08028. Barcelona, España</li>
+		<li>Teléfono: +34 93 272 300.</li>
+		<li>Correo electrónico: <a href="secretariatecnica@alexion.com">secretariatecnica@alexion.com</a>.</li>
+		<li>Delegado de Protección de Datos (DPO): Chief Privacy Officer. Contacto DPO: <a href="dataqueries@alexion.com">dataqueries@alexion.com</a></li>
+	</ul>
+-->	
+	
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p><div align="center"><input type="button" name="Enviar" value="Registrar"  onclick="javascript:Validar(AltaOnline);"/> <input type="reset" value="Limpiar"></div></p>
+	
+	<p>&nbsp;</p>
+    <h3><strong>Esta actividad formativa va dirigida EXCLUSIVAMENTE A MÉDICOS. Si usted no lo es, los créditos concedidos por el organismo pertinente no serán válidos.</strong></h3>
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	
+</form>
+<script type="text/javascript">
+    document.getElementById("Usuario").value = getUrlParam('usuario','Empty');
+</script>
