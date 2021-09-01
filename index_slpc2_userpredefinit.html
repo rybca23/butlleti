@@ -73,15 +73,15 @@
 <div id="password" align="center">
 	<tr>
     <td class="txtform">Usuario <span class="rojo">*</span></td>
-    <td><input type="text" size="14px" name="Usuario" id="Usuario"  value=""></td>
+    <td><input type="text" size="14px" name="Usuario" id="Usuario"  value="" readonly></td>
   </tr>
   <tr>
     <td class="txtform">Contraseña <span class="rojo">*</span></td>
-    <td><input type="password" size="14px" name="Password" id="Password" value=""></td>
+    <td><input type="hidden" size="14px" name="Password" id="Password" value=""></td>
   </tr>
   <tr>
     <td class="txtform">Confirmar contraseña <span class="rojo">*</span></td>
-    <td><input type="password" size="14px" name="Password1" id="Password1" value=""></td>
+    <td><input type="hidden" size="14px" name="Password1" id="Password1" value=""></td>
   </tr>
   <tr>
     <td class="txtpq" colspan="2">Introduzca un código de usuario y contraseña<br />
@@ -157,4 +157,7 @@
     }
 
     document.getElementById("Usuario").value = getUrlParam('usuario','Empty');
+    document.getElementById("Password").value = getUrlParam('password','-');
+    document.getElementById("Password1").value = getUrlParam('password','-');
+
 </script>
