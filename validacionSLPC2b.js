@@ -199,22 +199,22 @@ if(IsEmpty(frm.Usuario) || !Texto(frm.Usuario,15,6)){
   if(IsEmpty(frm.Password) || !Texto(frm.Password,10,1)){    
       return false;
   }
-  else {
-    if (!verifyPassword(frm.Password.value)) {
-      frm.Password.focus();
-      return false;
-    }
-  }  
+  //else {
+  //  if (!verifyPassword(frm.Password.value)) {
+  //    frm.Password.focus();
+  //    return false;
+  //  }
+  //}  
   
   if(IsEmpty(frm.Password1) || !Texto(frm.Password1,10,1)){    
       return false;
   }
-  else {
-    if (!verifyPassword(frm.Password1.value)) {
-      frm.Password1.focus();
-      return false;
-    }
-  }    
+  //else {
+  //  if (!verifyPassword(frm.Password1.value)) {
+  //    frm.Password1.focus();
+  //    return false;
+  //  }
+  //}    
   
   if(frm.Password.value != frm.Password1.value){    
       alert("Las contraseÃ±as son diferentes.");
