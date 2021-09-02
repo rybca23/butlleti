@@ -11,7 +11,7 @@
 // *********************************************************************
 
 // URLs FIJAS DEL PORTAL (MODIFICAR SOLO SI CAMBIA LA IP O EL PUERTO)
-    URL_GenerarMatricula = "https://rybca.online/asp/altaonline/validacion124b.asp"
+    URL_GenerarMatricula = "https://rybca.online/asp/altaonline/validacion124.asp"
 // *********************************************************************  
 
 function Matricular(){
